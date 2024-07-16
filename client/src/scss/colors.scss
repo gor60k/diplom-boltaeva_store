@@ -1,0 +1,15 @@
+$base: #F5ECE3;
+$dark-base: #EEE4DA;
+$text-color: #555555;
+$blur-text-color: #55555580;
+$brown: #AC8F78;
+$white: #FFF;
+
+:export {
+    base: $base;
+    darkbase: $dark-base;
+    brown: $brown;
+    textcolor: $text-color;
+    blurtextcolor: $blur-text-color;
+    white: $white;
+}

@@ -1,0 +1,35 @@
+.admin_modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 60px;
+    // max-height: 780px;
+    // overflow: auto;
+
+    &-wrap {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h2 {
+        @extend .title-text;
+    }
+}
+
+.pop-up_product-form {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+
+    .pop-up_input {
+        width: 30%;
+    }
+}
+

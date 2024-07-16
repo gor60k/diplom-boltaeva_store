@@ -1,0 +1,52 @@
+.header {
+    display: block;
+    width: 100%;
+    background: $base;
+    position: fixed;
+    border-bottom: 1px solid $dark-base;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transition: .3s;
+
+    &.active {
+        // box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+        transition: .3s;
+
+        .header_wrapper {
+            padding: 20px 0px;
+            transition: .3s;
+        }
+    }
+
+    &_wrapper {
+        max-width: 1300px;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px 0px;
+        transition: .3s;
+    }
+
+    &_list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        &-item {
+            a {
+                @extend .header_text;
+            }
+        }
+
+        &-icons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+    }
+}

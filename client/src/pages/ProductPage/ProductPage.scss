@@ -1,0 +1,144 @@
+.product_page {
+
+    &-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-swiper-container {
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+
+    .base_button {
+        width: 100%;
+        max-width: 407px;
+    }
+
+    &-controllers {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        &-wrapper {
+            width: 100%;
+            height: 100%;
+            max-width: 407px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &-thumbs {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        max-width: 70px;
+        max-height: 348px;
+        top: 50%;
+        left: 34px;
+        transform: translateY(-50%);
+
+        .swiper-slide {
+            max-height: 80px;
+            border: 1px solid $brown;
+        }
+    }
+
+    &-title {
+        @extend .title-text;
+        font-size: 48px;
+        line-height: 52px;
+        margin-bottom: 28px;
+    }
+
+    &-counter-price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    &-price {
+        @extend .base-text;
+        font-size: 32px;
+    }
+
+    &-tabs {
+        &-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        &-button {
+            padding: 3px 17px;
+            border-radius: 56px;
+            transition: .3s;
+
+            span {
+                @extend .base-text;
+                font-size: 16px;
+            }
+
+            &.active {
+                background: $dark-base;
+                transition: .3s;
+            }
+        }
+
+       
+
+        &-content {
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s;
+
+            &.open {
+                opacity: 1;
+                visibility: visible;
+                transition: .3s;
+            }
+
+            span {
+                @extend .base-text;
+            }
+        }
+    }
+}
+
+.counter {
+    background: $dark-base;
+    font-size: 24px;
+    border-radius: 66px;
+    padding: 10px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+
+    button {
+        font-size: 24px;
+        color: $blur-text-color;
+        transition: .3s;
+
+        &:hover {
+            color: $text-color;
+            transition: .3s;
+        }
+    }
+
+    &_value {
+        color: $text-color;
+        width: 18px;
+    }
+}
